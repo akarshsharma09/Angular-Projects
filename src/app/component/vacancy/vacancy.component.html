@@ -1,0 +1,32 @@
+<!-- <mat-list role="list">
+    <mat-list-item role="listitem">Java</mat-list-item>
+    <mat-list-item role="listitem">Angular</mat-list-item>
+    <mat-list-item role="listitem">Microservices</mat-list-item>
+  </mat-list> -->
+<div class="container">
+<div class="innerContainer">
+  
+  <h1>Please fill the details of Intern</h1>
+  <form (ngSubmit)="submitTheForm()">
+  <mat-form-field class="field" appearance="fill">
+    <mat-label>StudentId</mat-label>
+    <input name="studentId"[(ngModel)]="data.stdId" matInput>
+  </mat-form-field>
+  <mat-form-field class="field" appearance="fill">
+    <mat-label>Student Name</mat-label>
+    <input name="studentName"[(ngModel)]="data.name"matInput>
+  </mat-form-field>
+  <mat-form-field class="field" appearance="fill">
+    <mat-label>StudentMarks</mat-label>
+    <input name="studentMarks"[(ngModel)]="data.marks"matInput>
+  </mat-form-field>
+<div class="button">
+  <button mat-raised-button color="primary">Submit</button>
+  <button mat-raised-button color="primary">Reset</button>
+
+</div>
+</form>
+</div>
+</div>
+
+
